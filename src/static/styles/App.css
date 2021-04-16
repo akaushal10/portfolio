@@ -1,0 +1,320 @@
+/* Fonts Start */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+/* Fonts End */
+
+/* Start CSS Global */
+body {
+  font-family: Roboto;
+}
+.hr-border {
+  border-bottom: 1px solid rgb(182, 180, 180) !important;
+}
+@media (max-width: 600px) {
+  .text-center-sm {
+    text-align: center !important;
+  }  
+}
+/* End CSS Global */
+
+/* Start CSS For Navbar Component */
+#navbar {
+  z-index: 10;
+}
+.solid-nav {
+  background-color: white !important;
+}
+#navbar a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+#navbar a:after {
+  content: "_";
+  color: transparent;
+}
+
+#navbar a:hover:after {
+  content: "_";
+  color: white;
+}
+.nav-active{
+  color: #6d56c1 !important;
+}
+/* End CSS For Navbar Component */
+
+/* Start CSS For Introduction Component */
+
+.bg-intro-dark {
+  background-image: linear-gradient(
+    -54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
+  ) !important;
+}
+#introductionTable td {
+  padding: 5px;
+  vertical-align: top;
+}
+#introductionTable .text-uppercase {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+#intro {
+  font-family: Roboto Mono;
+}
+#introductionTable .mobile,
+#introductionTable .email {
+  text-decoration: none;
+  color: white;
+}
+#introductionTable .mobile:hover,
+#introductionTable .email:hover {
+  text-decoration: underline;
+}
+.intro-profile-icons a {
+  text-decoration: none !important;
+  color: white;
+  opacity: 0.5;
+}
+.intro-profile-icons a:hover {
+  opacity: 1;
+}
+#intro .intro-img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+/* End CSS For Introduction Component */
+
+/* Start CSS For Header Component */
+.btn-download-cv {
+  background-color: #6d56c1 !important;
+  color: white !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.btn-download-cv a{
+  color: white !important;
+  text-decoration: none;
+}
+@media (max-width:500px){
+  .intro-img{
+    height: 350px !important;
+  }
+}
+/* End CSS For Header Component */
+
+/* Start CSS For Resume_Header Component */
+#resume-header .title,
+#resume-header .content {
+  color: black !important;
+}
+/* End CSS For Resume_Header Component */
+
+/* Start CSS For Resume_GeneralSkills Component */
+#resume-general-skills .title {
+  color: black !important;
+  font-weight: 600;
+}
+.skill .skill-title,
+.skill .skill-value {
+  font-size: 13px !important;
+}
+/* End CSS For Resume_GeneralSkills Component */
+
+/* Stepper Start */
+.resume-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.resume-list .resume-list_title {
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 40px;
+}
+.resume-list .resume-list__block {
+  border-left: 2px solid #6d56c1;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+.resume-list .resume-list__block p {
+  margin: 0;
+}
+.resume-list .resume-list__block:before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #6d56c1;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: -32px;
+}
+.resume-list .resume-list__block:last-child {
+  padding-bottom: 0;
+}
+.resume-list .resume-list__block-title {
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono, monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.resume-list .resume-list__block-date {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  padding-bottom: 10px;
+}
+.resume-list .resume-list__block-content {
+  color: black !important;
+}
+/* Stepper End */
+
+/* Start CSS For Projects Component */
+#projects .title {
+  color: black !important;
+  font-size: 25px;
+}
+.project-div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project-div .project-section .project-title {
+  color: black !important;
+  font-weight: 600;
+  font-family: Roboto Mono;
+}
+.project-div .project-section .project-content {
+  color: black !important;
+  font-size: 15px;
+}
+.project-div .project-section .project-stack {
+  color: black !important;
+  font-family: Roboto Mono;
+}
+.project-url {
+  text-decoration: none;
+  color: #6d56c1;
+  font-family: Roboto Mono;
+}
+.project-url:hover {
+  text-decoration: underline;
+}
+
+/* End CSS For Projects Component */
+
+/* Start CSS For Service Component */
+#services .title {
+  color: black !important;
+  font-size: 25px;
+}
+.service-div{
+  cursor: pointer;
+}
+.service-div .service-name {
+  color: black !important;
+  font-family: Roboto Mono;
+  font-size: 14px;
+}
+
+.img-hover-zoom{
+  overflow: hidden; 
+}
+
+.img-hover-zoom img{
+  transform-origin: 50% 65%;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: brightness(150%);
+}
+
+/* The Transformation */
+.img-hover-zoom:hover img {
+  filter: brightness(100%);
+  transform: scale(0.8);
+}
+
+/* End CSS For Service Component */
+
+
+
+/* Start CSS For Project Carousel */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+/* End CSS For Projects Carousel */
+
+/* Start CSS For Footer */
+#footer {
+  background-image: linear-gradient(
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
+  ) !important;
+  font-family: Roboto Mono;
+  color: white;
+}
+.footer-info-table td {
+  padding: 5px;
+}
+.footer-links {
+  list-style: none;
+  padding-left: 3px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+.footer-links a:hover {
+  font-size: 17px;
+  text-decoration: underline;
+}
+.footer-contact-form input,
+.footer-contact-form textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+.footer-contact-form button {
+  box-shadow: 0 1px 29px rgb(0 0 0 / 16%);
+  background-color: #6d56c1;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+.footer-contact-form input:focus,
+.footer-contact-form textarea:focus {
+  outline: none;
+}
+.footer-contact-form input::placeholder,
+.footer-contact-form textarea::placeholder {
+  color: white;
+}
+@media (max-width:500px){
+  .MuiSnackbar-root{
+    left:auto !important;
+    right:auto !important;
+  }
+}
+  /* End CSS For Footer */
+  
